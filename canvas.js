@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
     ctx.lineCap = "round";
 
     ctx.lineTo(e.clientX, e.clientY);
-    ctx.strokeStyle = "green";
+    // ctx.strokeStyle = "blue";
     ctx.stroke();
     ctx.beginPath();
     ctx.moveTo(e.clientX, e.clientY);

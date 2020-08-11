@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Drawing</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Canvas Drawing</title>
-        <style>
-            canvas {
-                background-color: rgb(247, 234, 234);
-                margin: auto;
-                display: flex;
-            }
-        </style>
-    </head>
-
-
-    <body>
-        <canvas id="canvas"> </canvas>
-        <script src="canvas.js"> </script>
-    </body>
-
+  <body>
+    <button
+      style="height: 30px; width: 80px; margin: 5px;"
+      onClick="addLine()"
+      type="button"
+    >
+      Add a line
+    </button>
+    <button
+      style="height: 30px; width: 120px; margin: 5px;"
+      onClick="addTextBox()"
+      type="button"
+    >
+      Add a Text Box
+    </button>
+    <button
+      style="height: 30px; width: 120px; margin: 5px;"
+      onClick="saveCanvas()"
+      type="button"
+    >
+      Save Changes
+    </button>
+    <canvas id="canvas"> </canvas>
+    <script src="./lib/fabric.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
